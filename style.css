@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: linear-gradient(to right, #ffb6b6, #fde2e2, #d8b9c3, #856c8b);
+    overflow: hidden;
+}
+.container {
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    font-family: cursive;
+    margin-top: 7%;
+}
+.container .heading {
+    color: red;
+    font-size: 40px;
+    text-shadow: 5px 5px 5px black;
+    margin: 50px;
+    /* border: 1px solid yellow; */
+}
+.container .heading span {
+    color: black;
+    font-size: 80px;
+    text-shadow: 5px 5px 5px red;
+    /* border: 1px solid yellow; */
+}
+.flexbox {
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 1px solid red; */
+    padding: 10px;
+}
+.flexbox img {
+    height: 150px;
+    width: 150px;
+    /* border: 1px solid green; */
+    margin: 10px;
+    box-shadow: 0px 0px 20px 2px black;
+}
+.flexbox img:hover{
+    box-shadow: 0px 0px 20px 2px red;
+    cursor: pointer;
+}
+.btn{
+    text-align: center;
+}
+button{
+    margin: 50px;
+    padding: 5px;
+    width: 40%;
+    font-size: 30px;
+    color: black;
+    border-radius: 20px;
+    font-family: cursive;
+}
+button:hover{
+    box-shadow: 0 0 20px 2px black;
+    cursor: pointer;
+}
+@media screen and (max-width:1000px){
+    body{
+        background: linear-gradient(to right, #ffb6b6, #fde2e2, #d8b9c3, #856c8b);
+        overflow: scroll;
+    }
+    .container{
+        max-width: 100%;
+        height: auto;
+        margin-top: none;
+    }
+    .container .heading {
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 25px;
+    }
+    .container .heading span {
+        font-size:60px;
+    }
+    .flexbox img {
+        width: 80px;
+        height: 80px;
+    }
+    .btn{
+        margin-top: 40px;
+    }
+    button{
+        width: 80%;
+        margin: auto;
+    }
+}
